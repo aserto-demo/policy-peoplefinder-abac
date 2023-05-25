@@ -8,7 +8,11 @@ default enabled = true
 
 allowed {
 	props = input.user.properties
-	props.department == "Operations Test"
+	props.department == "Operations"
+}
+
+allowed {
+	input.user.key == input.resource.id
 }
 
 allowed {
